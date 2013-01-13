@@ -1,0 +1,17 @@
+Installation
+============
+
+First, run the configure.py script to set the paths to the DBus and DBus-Glib headers and libraries, e.g.:
+
+$ ./configure.py -l /usr/lib -i /usr/lib/dbus/include -i /usr/lib/glib/include
+
+This will create a setup.cfg file that stores the location of the found headers and libraries. 
+Now, you can use the standard Python setup.py script as so:
+
+$ ./setup.py install
+
+To build the package in-place (i.e. without installing), run the configure script as specified above, and then do:
+
+$ ./setup.py build_ext --inplace
+
+
