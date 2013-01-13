@@ -22,7 +22,9 @@ class BuildExt (build_ext):
         Configure the compilation before starting.-
         """
         build_ext.initialize_options (self)
-        all_found = configure (['-i', '/usr/lib/dbus-1.0/include',
+        all_found = configure (['-i', '.',
+                                '-i', '/usr/lib/dbus-1.0/include',
+                                '-i', '/usr/include/dbus-1.0/dbus',
                                 '-i', '/usr/lib/glib-2.0/include',
                                 '-i', '/usr/include/glib-2.0'])
         if not all_found:
