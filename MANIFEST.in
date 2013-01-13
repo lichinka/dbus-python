@@ -1,0 +1,8 @@
+include configure.py
+include _dbus_bindings/conn-internal.h
+include _dbus_bindings/dbus_bindings-internal.h
+include _dbus_bindings/types-internal.h
+include _dbus_bindings/compat-internal.h
+include _dbus_bindings/message-internal.h
+include include/config.h
+include include/dbus-python.h
